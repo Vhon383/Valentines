@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Invitation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9e3e3;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #e74c3c;
+            font-size: 2.5em;
+        }
+        p {
+            color: #333;
+            font-size: 1.2em;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #c0392b;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="invitation" class="container">
+        <h1>Will You Be My Valentine love?</h1>
+        <p>After your quizzes my love, lets have a date para maka rest ka hehe</p>
+        <img src="yel.jpg" alt="Valentine's Day Image">
+        <p>Date: February 14th, 2024</p>
+        <p>Time: After your quizzes</p>
+        <p>Location: [Mcdo or Greenwhich]</p>
+        <button id="yesButton" class="button">Yes!</button>
+    </div>
+
+    <div id="response" class="container hidden">
+        <h1>Yey, I Love You!</h1>
+        <p>I miss you, looove! ❤️</p>
+        <img src="iloveyou-cat.gif" alt="Celebration Image">
+    </div>
+
+    <script>
+        // JavaScript to handle the button click
+        document.getElementById("yesButton").addEventListener("click", function() {
+            // Hide the invitation
+            document.getElementById("invitation").classList.add("hidden");
+            // Show the response
+            document.getElementById("response").classList.remove("hidden");
+        });
+    </script>
+</body>
+</html>
